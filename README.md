@@ -14,6 +14,7 @@ python3 gizmo2hydrogen.py CONFIGFILE
 
 ## Config File Example
 
+'''
 [drumkit]
 name = SomeDrumkit
 license = CC BY-SA
@@ -37,7 +38,4 @@ Tom1 = -0.2
 Tom2 = 0.2
 Floor Tom1 = 0.3
 Fllor Tom2 = 0.4
-
-## Notice
-
-* mics order must be same as drumkit's format. for example, Mul
+'''
