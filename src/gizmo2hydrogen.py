@@ -69,7 +69,7 @@ def writehydrogen(config):
         instrdef = '{}/{}'.format(basedir, insfile)
         generatesample(instrdef, ins, insfile.rsplit('/', 1)[0], config)
     items.sort(key=lambda x:x[0])
-    out = basstemplate.format(content='\n'.join([i[1] for i in items]), name=config.get('drumkit', 'name'), license=config.get('settings', 'license'))
+    out = basstemplate.format(content='\n'.join([i[1] for i in items]), name=config.get('drumkit', 'name'), license=config.get('drumkit', 'license'))
     open(destdir + '/drumkit.xml', 'w').write(out)
 
 def generatesample(instrdef, instr, insdir, config):
